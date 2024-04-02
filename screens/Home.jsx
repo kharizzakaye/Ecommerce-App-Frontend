@@ -1,8 +1,9 @@
-import { TouchableOpacity, View, Text } from "react-native";
+import { TouchableOpacity, View, Text, ScrollView } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import styles from "./Home.styles";
 import { Ionicons, Fontisto } from "@expo/vector-icons"
+import { Welcome } from "../components";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <View style={styles.appBarWrapper}>
                 <View style={styles.appBar}>
                     <Ionicons name="location-outline" size={24} />
+
                     <Text style={styles.location}>Tokyo, Japan</Text>
 
                     <View style={{ alignItems: "flex-end" }}>
@@ -24,6 +26,10 @@ const Home = () => {
 
                 </View>
             </View>
+
+            <ScrollView>
+                <Welcome />
+            </ScrollView>
         </SafeAreaView>
     )
 }
