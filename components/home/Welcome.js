@@ -8,13 +8,21 @@ const Welcome = () => {
     return (
         <View>
             <View style={styles.container}>
-                <Text style={styles.welcomeText(COLORS.black, SIZES.extraSmall)}>{" "}Find the most</Text>
-                <Text style={styles.welcomeText(COLORS.primary, 0)}>{" "}Luxurious furniture</Text>
+                <Text style={styles.welcomeText(COLORS.black, SIZES.extraSmall)}>
+                    {" "}Find the most
+                </Text>
+                <Text style={styles.welcomeText(COLORS.primary, 0)}>
+                    {" "}Luxurious furniture
+                </Text>
             </View>
 
             <View style={styles.searchContainer}>
                 <TouchableOpacity>
-                    <Feather name="search" size={24} style={styles.searchIcon} />
+                    <Feather 
+                        name="search" 
+                        size={24} 
+                        style={styles.searchIcon} 
+                    />
                 </TouchableOpacity>
 
                 <View style={styles.searchWrapper}>
