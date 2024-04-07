@@ -8,11 +8,14 @@ const Welcome = () => {
     return (
         <View>
             <View style={styles.container}>
-                <Text style={styles.welcomeText(COLORS.black, SIZES.extraSmall)}>
+                {/* <Text style={styles.welcomeText(COLORS.black, SIZES.extraSmall)}>
                     {" "}Find the most
                 </Text>
                 <Text style={styles.welcomeText(COLORS.primary, 0)}>
                     {" "}Luxurious furniture
+                </Text> */}
+                <Text style={styles.welcomeText(COLORS.primary, 0)}>
+                    {" "}Our Furnitures
                 </Text>
             </View>
 
