@@ -6,9 +6,11 @@ import { Ionicons } from "@expo/vector-icons"
 import { useNavigation } from "@react-navigation/native"
 
 const ProductCardView = () => {
+    const navigation = useNavigation();
+
     return(
         <TouchableOpacity
-            onPress={() => {}}
+            onPress={() => navigation.navigate("ProductDetails")}
         >
             <View style={styles.container}>
                 <View style={styles.imageContainer}>
