@@ -3,9 +3,8 @@ import { COLORS, SIZES } from "../../constants";
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: SIZES.medium,
-        marginBottom: -SIZES.extraSmall,
-        marginHorizontal: 12,
+        marginTop: SIZES.medium, 
+        marginLeft: 12
     },
     
 });
